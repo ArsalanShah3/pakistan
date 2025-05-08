@@ -44,7 +44,7 @@
 
 /* Solid Navbar on Scroll */
 .navbar.scrolled {
-  background-color: #198754 !important; /* Bootstrap green */
+  background-color: green !important; /* Bootstrap green */
   backdrop-filter: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -88,7 +88,7 @@ body {
   max-width: 300px;
 }
 footer {
-  background-color: #198754; /* Bootstrap green or your choice */
+  background-color: green; /* Bootstrap green or your choice */
 }
 /* .banner {
   position: relative;

@@ -6,18 +6,26 @@
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
     <title>Pakistan Army Awards</title>
     <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
       body {
         margin: 0;
         font-family: Arial, sans-serif;
         background: linear-gradient(to bottom, white, #e6f4ea);
         color: #0b6623;
-        padding: 20px;
+        /* padding: 20px; */
       }
       h1 {
         text-align: center;
         font-size: 3em;
         color: #0b6623;
         animation: pulse 2s infinite;
+      }
+      .main{
+        padding: 20px;
       }
       @keyframes pulse {
         0% {
@@ -78,7 +86,7 @@
         margin: 10px auto;
       }
       footer {
-        background-color: #006400;
+        background-color: green;
         color: white;
         text-align: center;
         padding: 30px;
@@ -86,12 +94,34 @@
         animation: fadeInUp 2s ease-out;
         margin-top: 35px;
       }
+      /* Style the navbar background and text */
+.navbar {
+  background-color: green; /* Green background */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* White text for links */
+  font-weight: 500; 
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Lighter white on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Navbar branding logo */
+.navbar-brand img {
+  height: 55px;
+  width: auto; /* Preserve the logo aspect ratio */
+}
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: green;">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" style="height: 55px; width: 110px;"></a>
+          <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" style="height: 55px; width: 110px;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -117,6 +147,7 @@
           </div>
       </div>
   </nav>
+  <div class="main">
     <h1>Pakistan Army Awards</h1>
     <div class="grid">
       <div class="card">
@@ -202,6 +233,7 @@
           <p><strong>General Raheel Sharif</strong></p>
         </div>
       </div>
+    </div>
     </div>
     <footer>🇵🇰 Awords Of Pakistan | Strength, Peace & Sovereignty</footer>
   </body>
