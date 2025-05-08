@@ -90,5 +90,26 @@ body {
 footer {
   background-color: #198754; /* Bootstrap green or your choice */
 }
+.banner {
+  position: relative;
+}
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px;
+  border-radius: 8px;
+}
+.controls button {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
