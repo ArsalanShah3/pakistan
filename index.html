@@ -50,11 +50,14 @@
   </nav>
   <!-- navbar end  -->
   <section class="banner">
-    <video id="bgVideo" class="bg-video" autoplay muted loop>
+    <video id="bgVideo" class="bg-video d-flex justify-content-center align-items-center" autoplay muted loop>
       <source src="video/video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  
+    <div class="video-text-overlay position-absolute top-50 start-50 translate-middle text-white text-center">
+      <h1 id="typingText" class="text-white"></h1>
+    </div>
+    
     <div class="controls">
       <button id="volUp">🔊+</button>
       <button id="volDown">🔉−</button>
@@ -92,6 +95,37 @@
     </div>
   </section>
   <!-- About Us Section End -->
+<!-- Army Overview Section Start -->
+<section class="py-5" style="background-color: #eef5f3;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Text Column -->
+      <div class="col-md-6 col-12">
+        <h2 class="mb-3 text-success fw-bold">Pakistan Armed Forces</h2>
+        <p style="font-size: 1.1rem; color: #333;">
+          The Pakistan Armed Forces are one of the most powerful military forces in South Asia, consisting of the Army, Navy, and Air Force. The Army plays a central role in national defense, border security, and international peacekeeping missions.
+        </p>
+        <p style="font-size: 1.05rem; color: #555;">
+          Under the leadership of top-ranking generals, the Pakistan Army is equipped with advanced weaponry, cutting-edge defense systems, and continues to grow in strength through modernization and international collaborations.
+        </p>
+        <ul style="color: #2c3e50;">
+          <li><strong>Founded:</strong> 14 August 1947</li>
+          <li><strong>Headquarters:</strong> Rawalpindi, Punjab</li>
+          <li><strong>Notable Branches:</strong> ISPR, Armoured Corps, Strategic Forces Command</li>
+        </ul>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 col-12">
+        <img src="images/airforce.webp" alt="Pakistan Army Troops" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Army Overview Section End -->
+
+   
   <!-- card section  -->
   <h1 class="py-4" style="text-align: center;">Army</h1>
   <div class="container">
@@ -140,6 +174,7 @@
 
     </div>
   </div>
+ 
 
   <!-- footer   -->
   <footer class=" text-white py-4 mt-5" style="background-color: green;">

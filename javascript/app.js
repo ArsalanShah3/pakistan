@@ -25,3 +25,35 @@ window.addEventListener("scroll", function () {
     video.muted = !video.muted;
     muteToggle.textContent = video.muted ? "🔇" : "🔈";
   });
+
+
+
+  const textElement = document.getElementById('typingText');
+  const messages = ["Pakistan Unity Day", "Pakistan Zindabad"];
+  let messageIndex = 0;
+  let charIndex = 0;
+
+  function typeText() {
+    if (charIndex < messages[messageIndex].length) {
+      textElement.textContent += messages[messageIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(typeText, 100); // typing speed
+    } else {
+      setTimeout(eraseText, 1500); // wait after full text is typed
+    }
+  }
+
+  function eraseText() {
+    if (charIndex > 0) {
+      textElement.textContent = messages[messageIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(eraseText, 50); // deleting speed
+    } else {
+      messageIndex = (messageIndex + 1) % messages.length;
+      setTimeout(typeText, 500); // delay before next typing
+    }
+  }
+
+  // Start animation
+  textElement.classList.add('blink');
+  typeText();
