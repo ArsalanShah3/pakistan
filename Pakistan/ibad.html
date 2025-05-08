@@ -10,7 +10,7 @@
  
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: green;">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top custom-nav" style="background-color: #106A37;" id="main-nav">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" style="height: 55px; width: 110px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,8 +49,8 @@
   
   <section class="section-content bg-light">
     <div class="container">
-      <h2 class=" Text1 section-title">What is Atomic Power?</h2>
-      <p class="text-center">Atomic power, or nuclear energy, refers to the energy released during nuclear reactions. It powers cities, fuels advanced technologies, and plays a significant role in the future of energy solutions. Through processes like fission and fusion, atomic energy helps generate electricity and even treat cancer. Let's dive into some of the key aspects of atomic power!</p>
+      <h2 class=" Text1 section-title" style="font-size: 60px;">What is Atomic Power?</h2>
+      <p class="text-center fs-5">Atomic power, or nuclear energy, refers to the energy released during nuclear reactions. It powers cities, fuels advanced technologies, and plays a significant role in the future of energy solutions, atomic energy helps generate electricity and even treat cancer. Let's dive into some of the key aspects of atomic power!</p>
 
       
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -103,19 +103,20 @@
 
 
 
-<div class="Video">
-  <h2 class="Text">Atomic Way</h2>
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe 
+<section class="py-5 bg-light" id="atomic-video">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold Text5" style="font-size: 60px; background-color: #106A37;   padding: 15px 0; color: rgb(4, 4, 4);">How Atomic Energy Works</h2>
+    <p class="mb-4 text-muted fs-3">Watch this short animated video to understand the science behind nuclear power generation.</p>
     
-    src="https://www.youtube.com/embed/1zkynnKgQJY?si=7byvzu2DLciBOjXN"
-      style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.youtube.com/embed/rcOFV4y5z8c" 
+        title="How Nuclear Energy Works" 
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
-</div>
+</section>
 
 
 
@@ -125,7 +126,17 @@
     </div>
   </footer>
 
+<script>
+  const nav = document.getElementById('main-nav');
 
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      nav.classList.add('hide-line');
+    } else {
+      nav.classList.remove('hide-line');
+    }
+  });
+</script>
   
 
 

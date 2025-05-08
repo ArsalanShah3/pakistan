@@ -14,7 +14,7 @@
       <!-- <div class="loading" id="load" style="transition: 2s;">
         <img src="./pakistan-flag-4.gif" alt="" />
       </div> -->
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: green;">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top custom-nav" id="main-nav" style="background-color: #106A37;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" style="height: 55px; width: 110px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -151,6 +151,20 @@
       <!-- Footer -->
       <footer>🇵🇰 Nuclear Pakistan | Strength, Peace & Sovereignty</footer>
     </div>
+
+    <script>
+      const nav = document.getElementById('main-nav');
+    
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          nav.classList.add('hide-line');
+        } else {
+          nav.classList.remove('hide-line');
+        }
+      });
+    </script>
+
+
     <script src="./code.js"></script>
     <script src="../javascript/js/bootstrap.min.js"></script>
   </body>

@@ -50,12 +50,12 @@ window.addEventListener("scroll", function () {
   textElement.classList.add('blink');
   typeText();
 
-  window.addEventListener("load", function () {
-    setTimeout(function () {
-      const loader = document.getElementById("loader");
-      loader.classList.add("fade-out"); // if you use fade animation
-      setTimeout(() => loader.style.display = "none", 200); // after fade
-    }, 2000); // 2 seconds
-  });
+  // window.addEventListener("load", function () {
+  //   setTimeout(function () {
+  //     const loader = document.getElementById("loader");
+  //     loader.classList.add("fade-out"); // if you use fade animation
+  //     setTimeout(() => loader.style.display = "none", 200); // after fade
+  //   }, 2000); // 2 seconds
+  // });
   
   

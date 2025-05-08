@@ -44,7 +44,7 @@
 
 /* Solid Navbar on Scroll */
 .navbar.scrolled {
-  background-color: green !important; /* Bootstrap green */
+  background-color: #106A37 !important; /* Bootstrap green */
   backdrop-filter: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

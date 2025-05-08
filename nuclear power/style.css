@@ -9,7 +9,7 @@ body {
 
   /* Header Section */
   header {
-    background-color:  rgba(0, 128, 0, 0.756);
+    background-color:  #106A37;
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -19,6 +19,14 @@ body {
     text-align: center;
     color: white;
     animation: fadeIn 2s ease-out;
+  }
+  .custom-nav {
+    border-bottom: 3px solid rgb(9, 8, 8);
+    transition: border-bottom 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .custom-nav.hide-line {
+    border-bottom: none;
   }
 
   header h1 {
@@ -129,7 +137,7 @@ body {
 
   /* Footer */
   footer {
-    background-color: #006400;
+    background-color: #106A37;
     color: white;
     text-align: center;
     padding: 30px;
