@@ -124,3 +124,15 @@ footer {
 .navy{
   height: 300px;
 }
+
+
+
+
+#loader {
+  transition: opacity 0.5s ease;
+}
+#loader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
