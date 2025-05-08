@@ -14,5 +14,7 @@
  
 }
 @media (max-width:576px){
-   
+    .banner{
+        height: 100vh;
+      }
 }

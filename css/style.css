@@ -90,9 +90,9 @@ body {
 footer {
   background-color: #198754; /* Bootstrap green or your choice */
 }
-.banner {
+/* .banner {
   position: relative;
-}
+} */
 .controls {
   position: absolute;
   bottom: 20px;
