@@ -144,6 +144,7 @@ footer {
 #typingText {
   font-size: 4em !important; /* Increased font size */
   color: white;
+  height: 90px !important;
   text-shadow:
     -1px -1px 0 #000,
      1px -1px 0 #000,
