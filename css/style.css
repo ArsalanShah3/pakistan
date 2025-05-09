@@ -36,7 +36,7 @@
 /* Transparent Navbar Initially */
 /* Transparent Glass Navbar */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.1); /* transparent white */
+  background-color: rgba(27, 25, 25, 0.354); /* transparent white */
   backdrop-filter: blur(10px); /* glass blur */
   transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
