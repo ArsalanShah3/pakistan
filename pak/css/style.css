@@ -58,3 +58,6 @@ footer {
   height: 55px;
   width: auto; /* Preserve the logo aspect ratio */
 }
+.navbar-brand img{
+  filter: brightness(0) invert(1);
+}

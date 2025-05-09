@@ -135,4 +135,6 @@ footer {
   opacity: 0;
   visibility: hidden;
 }
-
+.navbar-brand img{
+  filter: brightness(0) invert(1);
+}

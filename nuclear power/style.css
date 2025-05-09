@@ -217,3 +217,8 @@ body {
   width: auto; /* Preserve the logo aspect ratio */
   margin-top: 0px;
 }
+
+
+.navbar-brand img{
+  filter: brightness(0) invert(1);
+}
