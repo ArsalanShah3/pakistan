@@ -52,10 +52,12 @@ window.addEventListener("scroll", function () {
 
   // window.addEventListener("load", function () {
   //   setTimeout(function () {
-  //     const loader = document.getElementById("loader");
-  //     loader.classList.add("fade-out"); // if you use fade animation
-  //     setTimeout(() => loader.style.display = "none", 200); // after fade
+
   //   }, 2000); // 2 seconds
   // });
+  setInterval(()=>{
+    document.getElementById("loader").style.display="none"
+    document.getElementById("main").style.display="block"
+  },2000)
   
   
